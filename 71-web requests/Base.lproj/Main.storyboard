@@ -18,16 +18,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdu-WU-XMk">
-                                <rect key="frame" x="0.0" y="20" width="600" height="530"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="550"/>
                                 <color key="backgroundColor" red="0.73653996759999996" green="0.40276336480000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fal-5K-w5g">
+                                <rect key="frame" x="225" y="589" width="150" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="4K3-dW-LBK"/>
+                                    <constraint firstAttribute="height" constant="2" id="AHB-x2-6eo"/>
+                                </constraints>
+                                <color key="progressTintColor" red="1" green="0.14244061029999999" blue="0.3111613399" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" red="1" green="0.94466436388264785" blue="0.68547067587980059" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGX-TJ-GNM">
                                 <rect key="frame" x="33" y="558" width="35" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="D82-Kd-5Hq"/>
                                     <constraint firstAttribute="height" constant="30" id="ZPx-GV-Nah"/>
                                 </constraints>
-                                <state key="normal" title="Swift"/>
+                                <state key="normal" title="Swift">
+                                    <color key="titleColor" red="1" green="0.14244061029999999" blue="0.3111613399" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="loadSwift:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kg6-8F-F4f"/>
                                 </connections>
@@ -38,7 +49,9 @@
                                     <constraint firstAttribute="height" constant="30" id="Gap-R5-0Zv"/>
                                     <constraint firstAttribute="width" constant="39" id="VGJ-zc-HWq"/>
                                 </constraints>
-                                <state key="normal" title="Steak"/>
+                                <state key="normal" title="Steak">
+                                    <color key="titleColor" red="1" green="0.14244061029999999" blue="0.3111613399" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="loadSteak:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gya-rW-Ytr"/>
                                 </connections>
@@ -49,20 +62,15 @@
                                     <constraint firstAttribute="height" constant="30" id="7aO-bR-79H"/>
                                     <constraint firstAttribute="width" constant="48" id="gXb-hG-hYN"/>
                                 </constraints>
-                                <state key="normal" title="Celebs"/>
+                                <state key="normal" title="Celebs">
+                                    <color key="titleColor" red="1" green="0.14244061029999999" blue="0.3111613399" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="loadCelebs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="heL-LS-bS5"/>
                                 </connections>
                             </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fal-5K-w5g">
-                                <rect key="frame" x="225" y="589" width="150" height="2"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="4K3-dW-LBK"/>
-                                    <constraint firstAttribute="height" constant="2" id="AHB-x2-6eo"/>
-                                </constraints>
-                            </progressView>
                         </subviews>
-                        <color key="backgroundColor" red="0.79933894230769231" green="0.79933894230769231" blue="0.79933894230769231" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.76364920250000001" blue="0.001635324071" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="dGX-TJ-GNM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="33" id="0t4-nl-TWU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pcU-gb-2xU" secondAttribute="bottom" constant="12" id="AfY-ps-iEb"/>
@@ -72,7 +80,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gdu-WU-XMk" secondAttribute="bottom" constant="50" id="WsU-zB-G5p"/>
                             <constraint firstAttribute="trailing" secondItem="gdu-WU-XMk" secondAttribute="trailing" id="kff-eO-jrT"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dGX-TJ-GNM" secondAttribute="bottom" constant="12" id="lGr-pr-WSt"/>
-                            <constraint firstItem="gdu-WU-XMk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ndb-Xb-rL9"/>
+                            <constraint firstItem="gdu-WU-XMk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="ndb-Xb-rL9"/>
                             <constraint firstAttribute="trailing" secondItem="Jxz-sr-yZj" secondAttribute="trailing" constant="15" id="nfo-Vy-RE7"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fal-5K-w5g" secondAttribute="bottom" constant="8" id="t2O-8P-ELh"/>
                             <constraint firstItem="pcU-gb-2xU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ulf-o2-Cmy"/>
@@ -85,6 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="349"/>
         </scene>
     </scenes>
 </document>
